@@ -32,7 +32,7 @@ LAYERS = ('policy', 'conv0/output', 'pool0/output', 'conv1/output',
 __all__ = ['a3c', 'a3c_model']
 
 
-def a3c_model(layer='policy', load='SpaceInvaders-v0.tfmodel', num_actions=6):
+def a3c_model(layer='policy', load='DemonAttack-v0.tfmodel', num_actions=6):
     """Provide a featurizer
 
     :param layer: the a3c neural network layer to output
@@ -49,7 +49,7 @@ def a3c_model(layer='policy', load='SpaceInvaders-v0.tfmodel', num_actions=6):
     return predfunc
 
 
-def a3c(state, layer='policy', load='SpaceInvaders-v0.tfmodel', num_actions=6):
+def a3c(state, layer='policy', load='DemonAttack-v0.tfmodel', num_actions=6):
     """Featurize the provided state.
 
     :param state: 84x84x(3 * FRAME_HISTORY_LEN)
